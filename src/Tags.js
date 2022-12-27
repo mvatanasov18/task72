@@ -1,11 +1,10 @@
-function Tags({tags}) {
-	return (
-	  <ul className="tags">
-	  	{tags.map((x, i ) => (
-			  <li key={i} className="tag">#{x}</li>
-		  ))}
-	  </ul>
-	);
-  }
-  
-  export default Tags;
+import React from "react";
+
+export const Tags = (props) => {
+    return (
+        <ul className="tags">
+            {props.tags.map((t, index) => {
+                return <li key={index} className="tag">{'#' + ' ' + t}</li>})}
+        </ul>
+    );
+}
