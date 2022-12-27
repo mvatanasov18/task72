@@ -1,12 +1,11 @@
-export default function Tags(props) {
-    let tags = props.tags;
-    console.log(tags);
-    return (
-      <div class="tags">
-        {tags.map((tag) => (
-          <div class="tag">{"#" + tag}</div>
-        ))}
-      </div>
-    );
+function Tags({tags}) {
+	return (
+	  <ul className="tags">
+	  	{tags.map((x, i ) => (
+			  <li key={i} className="tag">#{x}</li>
+		  ))}
+	  </ul>
+	);
   }
   
+  export default Tags;
