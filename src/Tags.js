@@ -1,8 +1,12 @@
-export const Tags = (props) => {
+export default function Tags(props) {
+    let tags = props.tags;
+    console.log(tags);
     return (
-        <ul className="tags">
-            {props.tags.map((t, index) => {
-                 return <li key={index} className="tag">{'#' + ' ' + t}</li>})}
-        </ul>
-    )
-}
+      <div class="tags">
+        {tags.map((tag) => (
+          <div class="tag">{"#" + tag}</div>
+        ))}
+      </div>
+    );
+  }
+  
