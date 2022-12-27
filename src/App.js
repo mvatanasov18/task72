@@ -1,6 +1,7 @@
 import "./App.css";
 
 function App() {
+  const tags = ['boomdotdev','task','tags','react']
   return (
     <div className="App">
       <section class="hero">
